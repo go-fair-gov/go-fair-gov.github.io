@@ -1,0 +1,478 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "https://go-fair-gov.github.io/ontology/e-process", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "https://go-fair-gov.github.io/ontology/e-process/"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://go-fair-gov.github.io/ontology/e-process/Autor",
+    "baseIri" : "https://go-fair-gov.github.io/ontology/e-process",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Autor"
+    },
+    "comment" : {
+      "undefined" : "Responsável pela criação de um documento"
+    },
+    "id" : "3"
+  }, {
+    "iri" : "https://go-fair-gov.github.io/ontology/e-process/Assunto",
+    "baseIri" : "https://go-fair-gov.github.io/ontology/e-process",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Assunto"
+    },
+    "comment" : {
+      "undefined" : "Sumariza o conteúdo de um documento"
+    },
+    "id" : "4"
+  }, {
+    "iri" : "https://go-fair-gov.github.io/ontology/e-process/Pessoa",
+    "baseIri" : "https://go-fair-gov.github.io/ontology/e-process",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Pessoa"
+    },
+    "comment" : {
+      "undefined" : "Um pessoa"
+    },
+    "id" : "5"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "12", "1" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "9"
+  }, {
+    "instances" : 0,
+    "union" : [ "12", "1" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "13"
+  }, {
+    "instances" : 0,
+    "union" : [ "4", "15", "16" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "14"
+  }, {
+    "instances" : 0,
+    "union" : [ "12", "1" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "17"
+  }, {
+    "instances" : 0,
+    "union" : [ "4", "15", "5", "20", "21", "16" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://go-fair-gov.github.io/ontology/e-process/Processo",
+    "baseIri" : "https://go-fair-gov.github.io/ontology/e-process",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Processo"
+    },
+    "comment" : {
+      "undefined" : "Processo eletrônico"
+    },
+    "id" : "12"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "10",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://go-fair-gov.github.io/ontology/e-process/Papel",
+    "baseIri" : "https://go-fair-gov.github.io/ontology/e-process",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Papel"
+    },
+    "comment" : {
+      "undefined" : "Função exercida por uma pessoa em uma organização"
+    },
+    "id" : "20"
+  }, {
+    "iri" : "https://go-fair-gov.github.io/ontology/e-process/Documento",
+    "baseIri" : "https://go-fair-gov.github.io/ontology/e-process",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Documento"
+    },
+    "comment" : {
+      "undefined" : "Um documento anexado à um processo eletrônico"
+    },
+    "id" : "1"
+  }, {
+    "iri" : "https://go-fair-gov.github.io/ontology/e-process/Materia",
+    "baseIri" : "https://go-fair-gov.github.io/ontology/e-process",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Materia"
+    },
+    "comment" : {
+      "undefined" : "Classificação para um processo eletrônico"
+    },
+    "id" : "15"
+  }, {
+    "iri" : "https://go-fair-gov.github.io/ontology/e-process/Organizacao",
+    "baseIri" : "https://go-fair-gov.github.io/ontology/e-process",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organizacao"
+    },
+    "comment" : {
+      "undefined" : "Instituição que produz e disponibiliza processos eletrônicos"
+    },
+    "id" : "21"
+  }, {
+    "instances" : 0,
+    "union" : [ "5", "1" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://go-fair-gov.github.io/ontology/e-process/Acesso",
+    "baseIri" : "https://go-fair-gov.github.io/ontology/e-process",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Acesso"
+    },
+    "comment" : {
+      "undefined" : "Nível de acesso ao processo ou documento eletrônico."
+    },
+    "id" : "16"
+  }, {
+    "instances" : 0,
+    "union" : [ "12", "1" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "27"
+  }, {
+    "instances" : 0,
+    "union" : [ "12", "1" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "36"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://go-fair-gov.github.io/ontology/e-process/formato",
+    "baseIri" : "https://go-fair-gov.github.io/ontology/e-process",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "formato"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Formato, extensão ou estrutura de uma informação"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://go-fair-gov.github.io/ontology/e-process/urlOrigem",
+    "baseIri" : "https://go-fair-gov.github.io/ontology/e-process",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "urlOrigem"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Endereço URL de origem de um recurso gerenciado por outro provedor"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://go-fair-gov.github.io/ontology/e-process/criadoPor",
+    "baseIri" : "https://go-fair-gov.github.io/ontology/e-process",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "criadoPor"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://go-fair-gov.github.io/ontology/e-process/autorDe",
+    "inverse" : "18",
+    "baseIri" : "https://go-fair-gov.github.io/ontology/e-process",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "autorDe"
+    },
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://go-fair-gov.github.io/ontology/e-process/cita",
+    "inverse" : "24",
+    "baseIri" : "https://go-fair-gov.github.io/ontology/e-process",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "cita"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://go-fair-gov.github.io/ontology/e-process/atuaComo",
+    "baseIri" : "https://go-fair-gov.github.io/ontology/e-process",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "atuaComo"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "Conceitua a função ou papel de uma pessoa em uma organização"
+    },
+    "attributes" : [ "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "https://go-fair-gov.github.io/ontology/e-process/numero",
+    "baseIri" : "https://go-fair-gov.github.io/ontology/e-process",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "numero"
+    },
+    "domain" : "27",
+    "comment" : {
+      "undefined" : "Número"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://go-fair-gov.github.io/ontology/e-process/associadoA",
+    "baseIri" : "https://go-fair-gov.github.io/ontology/e-process",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "associadoA"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "Relação de associação entre dois recursos quaisquer"
+    },
+    "attributes" : [ "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://go-fair-gov.github.io/ontology/e-process/fazParteDe",
+    "baseIri" : "https://go-fair-gov.github.io/ontology/e-process",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "fazParteDe"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://go-fair-gov.github.io/ontology/e-process/publicadoPor",
+    "baseIri" : "https://go-fair-gov.github.io/ontology/e-process",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "publicadoPor"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "Relação que define a publicação de algum recurso qualquer"
+    },
+    "attributes" : [ "object" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://go-fair-gov.github.io/ontology/e-process/classificadoComo",
+    "baseIri" : "https://go-fair-gov.github.io/ontology/e-process",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "classificadoComo"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Classifica uma categoria à um recurso qualquer"
+    },
+    "attributes" : [ "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://go-fair-gov.github.io/ontology/e-process/compostoPor",
+    "inverse" : "29",
+    "baseIri" : "https://go-fair-gov.github.io/ontology/e-process",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "compostoPor"
+    },
+    "domain" : "12",
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://go-fair-gov.github.io/ontology/e-process/nome",
+    "baseIri" : "https://go-fair-gov.github.io/ontology/e-process",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "nome"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Nome proprio de um recurso"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://go-fair-gov.github.io/ontology/e-process/citadoEm",
+    "baseIri" : "https://go-fair-gov.github.io/ontology/e-process",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "citadoEm"
+    },
+    "domain" : "34",
+    "attributes" : [ "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "https://go-fair-gov.github.io/ontology/e-process/dataCriacao",
+    "baseIri" : "https://go-fair-gov.github.io/ontology/e-process",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "dataCriacao"
+    },
+    "domain" : "36",
+    "comment" : {
+      "undefined" : "Data de criação do recurso"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "35"
+  } ]
+}

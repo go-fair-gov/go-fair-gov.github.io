@@ -1,0 +1,178 @@
+@prefix : <https://go-fair-gov.github.io/ontology/e-process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://go-fair-gov.github.io/ontology/e-process/> .
+
+<https://go-fair-gov.github.io/ontology/e-process/> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://go-fair-gov.github.io/ontology/e-process/associadoA
+:associadoA rdf:type owl:ObjectProperty ;
+            rdfs:domain :Pessoa ;
+            rdfs:range :Organizacao ;
+            rdfs:comment "Relação de associação entre dois recursos quaisquer" .
+
+
+###  https://go-fair-gov.github.io/ontology/e-process/atuaComo
+:atuaComo rdf:type owl:ObjectProperty ;
+          rdfs:domain :Pessoa ;
+          rdfs:range :Papel ;
+          rdfs:comment "Conceitua a função ou papel de uma pessoa em uma organização" .
+
+
+###  https://go-fair-gov.github.io/ontology/e-process/autorDe
+:autorDe rdf:type owl:ObjectProperty ;
+         owl:inverseOf :criadoPor ;
+         rdfs:domain :Autor ;
+         rdfs:range :Documento .
+
+
+###  https://go-fair-gov.github.io/ontology/e-process/cita
+:cita rdf:type owl:ObjectProperty ;
+      owl:inverseOf :citadoEm ;
+      rdfs:domain :Documento ;
+      rdfs:range :Pessoa .
+
+
+###  https://go-fair-gov.github.io/ontology/e-process/citadoEm
+:citadoEm rdf:type owl:ObjectProperty ;
+          rdfs:domain :Documento ,
+                      :Pessoa ;
+          rdfs:range :Documento .
+
+
+###  https://go-fair-gov.github.io/ontology/e-process/classificadoComo
+:classificadoComo rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Documento ,
+                              :Processo ;
+                  rdfs:range :Acesso ,
+                             :Assunto ,
+                             :Materia ;
+                  rdfs:comment "Classifica uma categoria à um recurso qualquer" .
+
+
+###  https://go-fair-gov.github.io/ontology/e-process/compostoPor
+:compostoPor rdf:type owl:ObjectProperty ;
+             owl:inverseOf :fazParteDe ;
+             rdfs:domain :Processo ;
+             rdfs:range :Documento .
+
+
+###  https://go-fair-gov.github.io/ontology/e-process/criadoPor
+:criadoPor rdf:type owl:ObjectProperty ;
+           rdfs:domain :Documento ;
+           rdfs:range :Autor .
+
+
+###  https://go-fair-gov.github.io/ontology/e-process/fazParteDe
+:fazParteDe rdf:type owl:ObjectProperty ;
+            rdfs:domain :Documento ;
+            rdfs:range :Processo .
+
+
+###  https://go-fair-gov.github.io/ontology/e-process/publicadoPor
+:publicadoPor rdf:type owl:ObjectProperty ;
+              rdfs:domain :Documento ,
+                          :Processo ;
+              rdfs:range :Organizacao ;
+              rdfs:comment "Relação que define a publicação de algum recurso qualquer" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://go-fair-gov.github.io/ontology/e-process/dataCriacao
+:dataCriacao rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Documento ,
+                         :Processo ;
+             rdfs:comment "Data de criação do recurso" .
+
+
+###  https://go-fair-gov.github.io/ontology/e-process/formato
+:formato rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Documento ;
+         rdfs:comment "Formato, extensão ou estrutura de uma informação" .
+
+
+###  https://go-fair-gov.github.io/ontology/e-process/nome
+:nome rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Acesso ,
+                  :Assunto ,
+                  :Materia ,
+                  :Organizacao ,
+                  :Papel ,
+                  :Pessoa ;
+      rdfs:comment "Nome proprio de um recurso" .
+
+
+###  https://go-fair-gov.github.io/ontology/e-process/numero
+:numero rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Documento ,
+                    :Processo ;
+        rdfs:comment "Número" .
+
+
+###  https://go-fair-gov.github.io/ontology/e-process/urlOrigem
+:urlOrigem rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Documento ,
+                       :Processo ;
+           rdfs:comment "Endereço URL de origem de um recurso gerenciado por outro provedor" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://go-fair-gov.github.io/ontology/e-process/Acesso
+:Acesso rdf:type owl:Class ;
+        rdfs:comment "Nível de acesso ao processo ou documento eletrônico." .
+
+
+###  https://go-fair-gov.github.io/ontology/e-process/Assunto
+:Assunto rdf:type owl:Class ;
+         rdfs:comment "Sumariza o conteúdo de um documento" .
+
+
+###  https://go-fair-gov.github.io/ontology/e-process/Autor
+:Autor rdf:type owl:Class ;
+       rdfs:comment "Responsável pela criação de um documento" .
+
+
+###  https://go-fair-gov.github.io/ontology/e-process/Documento
+:Documento rdf:type owl:Class ;
+           rdfs:comment "Um documento anexado à um processo eletrônico" .
+
+
+###  https://go-fair-gov.github.io/ontology/e-process/Materia
+:Materia rdf:type owl:Class ;
+         rdfs:comment "Classificação para um processo eletrônico" .
+
+
+###  https://go-fair-gov.github.io/ontology/e-process/Organizacao
+:Organizacao rdf:type owl:Class ;
+             rdfs:comment "Instituição que produz e disponibiliza processos eletrônicos" .
+
+
+###  https://go-fair-gov.github.io/ontology/e-process/Papel
+:Papel rdf:type owl:Class ;
+       rdfs:comment "Função exercida por uma pessoa em uma organização" .
+
+
+###  https://go-fair-gov.github.io/ontology/e-process/Pessoa
+:Pessoa rdf:type owl:Class ;
+        rdfs:comment "Um pessoa" .
+
+
+###  https://go-fair-gov.github.io/ontology/e-process/Processo
+:Processo rdf:type owl:Class ;
+          rdfs:comment "Processo eletrônico" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

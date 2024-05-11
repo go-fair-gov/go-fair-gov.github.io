@@ -1,0 +1,240 @@
+[ {
+  "@id" : "https://go-fair-gov.github.io/ontology/e-process/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "https://go-fair-gov.github.io/ontology/e-process/Acesso",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Nível de acesso ao processo ou documento eletrônico."
+  } ]
+}, {
+  "@id" : "https://go-fair-gov.github.io/ontology/e-process/Assunto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Sumariza o conteúdo de um documento"
+  } ]
+}, {
+  "@id" : "https://go-fair-gov.github.io/ontology/e-process/Autor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Responsável pela criação de um documento"
+  } ]
+}, {
+  "@id" : "https://go-fair-gov.github.io/ontology/e-process/Documento",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Um documento anexado à um processo eletrônico"
+  } ]
+}, {
+  "@id" : "https://go-fair-gov.github.io/ontology/e-process/Materia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Classificação para um processo eletrônico"
+  } ]
+}, {
+  "@id" : "https://go-fair-gov.github.io/ontology/e-process/Organizacao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Instituição que produz e disponibiliza processos eletrônicos"
+  } ]
+}, {
+  "@id" : "https://go-fair-gov.github.io/ontology/e-process/Papel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Função exercida por uma pessoa em uma organização"
+  } ]
+}, {
+  "@id" : "https://go-fair-gov.github.io/ontology/e-process/Pessoa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Um pessoa"
+  } ]
+}, {
+  "@id" : "https://go-fair-gov.github.io/ontology/e-process/Processo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Processo eletrônico"
+  } ]
+}, {
+  "@id" : "https://go-fair-gov.github.io/ontology/e-process/associadoA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relação de associação entre dois recursos quaisquer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Pessoa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Organizacao"
+  } ]
+}, {
+  "@id" : "https://go-fair-gov.github.io/ontology/e-process/atuaComo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Conceitua a função ou papel de uma pessoa em uma organização"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Pessoa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Papel"
+  } ]
+}, {
+  "@id" : "https://go-fair-gov.github.io/ontology/e-process/autorDe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Autor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Documento"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/criadoPor"
+  } ]
+}, {
+  "@id" : "https://go-fair-gov.github.io/ontology/e-process/cita",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Documento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Pessoa"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/citadoEm"
+  } ]
+}, {
+  "@id" : "https://go-fair-gov.github.io/ontology/e-process/citadoEm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Documento"
+  }, {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Pessoa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Documento"
+  } ]
+}, {
+  "@id" : "https://go-fair-gov.github.io/ontology/e-process/classificadoComo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Classifica uma categoria à um recurso qualquer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Documento"
+  }, {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Processo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Acesso"
+  }, {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Assunto"
+  }, {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Materia"
+  } ]
+}, {
+  "@id" : "https://go-fair-gov.github.io/ontology/e-process/compostoPor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Processo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Documento"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/fazParteDe"
+  } ]
+}, {
+  "@id" : "https://go-fair-gov.github.io/ontology/e-process/criadoPor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Documento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Autor"
+  } ]
+}, {
+  "@id" : "https://go-fair-gov.github.io/ontology/e-process/dataCriacao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Data de criação do recurso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Documento"
+  }, {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Processo"
+  } ]
+}, {
+  "@id" : "https://go-fair-gov.github.io/ontology/e-process/fazParteDe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Documento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Processo"
+  } ]
+}, {
+  "@id" : "https://go-fair-gov.github.io/ontology/e-process/formato",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Formato, extensão ou estrutura de uma informação"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Documento"
+  } ]
+}, {
+  "@id" : "https://go-fair-gov.github.io/ontology/e-process/nome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Nome proprio de um recurso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Acesso"
+  }, {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Assunto"
+  }, {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Materia"
+  }, {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Organizacao"
+  }, {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Papel"
+  }, {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Pessoa"
+  } ]
+}, {
+  "@id" : "https://go-fair-gov.github.io/ontology/e-process/numero",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Número"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Documento"
+  }, {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Processo"
+  } ]
+}, {
+  "@id" : "https://go-fair-gov.github.io/ontology/e-process/publicadoPor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relação que define a publicação de algum recurso qualquer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Documento"
+  }, {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Processo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Organizacao"
+  } ]
+}, {
+  "@id" : "https://go-fair-gov.github.io/ontology/e-process/urlOrigem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Endereço URL de origem de um recurso gerenciado por outro provedor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Documento"
+  }, {
+    "@id" : "https://go-fair-gov.github.io/ontology/e-process/Processo"
+  } ]
+} ]

@@ -1,0 +1,160 @@
+<https://go-fair-gov.github.io/ontology/e-process/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://go-fair-gov.github.io/ontology/e-process/associadoA
+<https://go-fair-gov.github.io/ontology/e-process/associadoA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://go-fair-gov.github.io/ontology/e-process/associadoA> <http://www.w3.org/2000/01/rdf-schema#domain> <https://go-fair-gov.github.io/ontology/e-process/Pessoa> .
+<https://go-fair-gov.github.io/ontology/e-process/associadoA> <http://www.w3.org/2000/01/rdf-schema#range> <https://go-fair-gov.github.io/ontology/e-process/Organizacao> .
+<https://go-fair-gov.github.io/ontology/e-process/associadoA> <http://www.w3.org/2000/01/rdf-schema#comment> "Relação de associação entre dois recursos quaisquer" .
+# 
+# https://go-fair-gov.github.io/ontology/e-process/atuaComo
+<https://go-fair-gov.github.io/ontology/e-process/atuaComo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://go-fair-gov.github.io/ontology/e-process/atuaComo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://go-fair-gov.github.io/ontology/e-process/Pessoa> .
+<https://go-fair-gov.github.io/ontology/e-process/atuaComo> <http://www.w3.org/2000/01/rdf-schema#range> <https://go-fair-gov.github.io/ontology/e-process/Papel> .
+<https://go-fair-gov.github.io/ontology/e-process/atuaComo> <http://www.w3.org/2000/01/rdf-schema#comment> "Conceitua a função ou papel de uma pessoa em uma organização" .
+# 
+# https://go-fair-gov.github.io/ontology/e-process/autorDe
+<https://go-fair-gov.github.io/ontology/e-process/autorDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://go-fair-gov.github.io/ontology/e-process/autorDe> <http://www.w3.org/2002/07/owl#inverseOf> <https://go-fair-gov.github.io/ontology/e-process/criadoPor> .
+<https://go-fair-gov.github.io/ontology/e-process/autorDe> <http://www.w3.org/2000/01/rdf-schema#domain> <https://go-fair-gov.github.io/ontology/e-process/Autor> .
+<https://go-fair-gov.github.io/ontology/e-process/autorDe> <http://www.w3.org/2000/01/rdf-schema#range> <https://go-fair-gov.github.io/ontology/e-process/Documento> .
+# 
+# https://go-fair-gov.github.io/ontology/e-process/cita
+<https://go-fair-gov.github.io/ontology/e-process/cita> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://go-fair-gov.github.io/ontology/e-process/cita> <http://www.w3.org/2002/07/owl#inverseOf> <https://go-fair-gov.github.io/ontology/e-process/citadoEm> .
+<https://go-fair-gov.github.io/ontology/e-process/cita> <http://www.w3.org/2000/01/rdf-schema#domain> <https://go-fair-gov.github.io/ontology/e-process/Documento> .
+<https://go-fair-gov.github.io/ontology/e-process/cita> <http://www.w3.org/2000/01/rdf-schema#range> <https://go-fair-gov.github.io/ontology/e-process/Pessoa> .
+# 
+# https://go-fair-gov.github.io/ontology/e-process/citadoEm
+<https://go-fair-gov.github.io/ontology/e-process/citadoEm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://go-fair-gov.github.io/ontology/e-process/citadoEm> <http://www.w3.org/2000/01/rdf-schema#domain> <https://go-fair-gov.github.io/ontology/e-process/Documento> .
+<https://go-fair-gov.github.io/ontology/e-process/citadoEm> <http://www.w3.org/2000/01/rdf-schema#domain> <https://go-fair-gov.github.io/ontology/e-process/Pessoa> .
+<https://go-fair-gov.github.io/ontology/e-process/citadoEm> <http://www.w3.org/2000/01/rdf-schema#range> <https://go-fair-gov.github.io/ontology/e-process/Documento> .
+# 
+# https://go-fair-gov.github.io/ontology/e-process/classificadoComo
+<https://go-fair-gov.github.io/ontology/e-process/classificadoComo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://go-fair-gov.github.io/ontology/e-process/classificadoComo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://go-fair-gov.github.io/ontology/e-process/Documento> .
+<https://go-fair-gov.github.io/ontology/e-process/classificadoComo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://go-fair-gov.github.io/ontology/e-process/Processo> .
+<https://go-fair-gov.github.io/ontology/e-process/classificadoComo> <http://www.w3.org/2000/01/rdf-schema#range> <https://go-fair-gov.github.io/ontology/e-process/Acesso> .
+<https://go-fair-gov.github.io/ontology/e-process/classificadoComo> <http://www.w3.org/2000/01/rdf-schema#range> <https://go-fair-gov.github.io/ontology/e-process/Assunto> .
+<https://go-fair-gov.github.io/ontology/e-process/classificadoComo> <http://www.w3.org/2000/01/rdf-schema#range> <https://go-fair-gov.github.io/ontology/e-process/Materia> .
+<https://go-fair-gov.github.io/ontology/e-process/classificadoComo> <http://www.w3.org/2000/01/rdf-schema#comment> "Classifica uma categoria à um recurso qualquer" .
+# 
+# https://go-fair-gov.github.io/ontology/e-process/compostoPor
+<https://go-fair-gov.github.io/ontology/e-process/compostoPor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://go-fair-gov.github.io/ontology/e-process/compostoPor> <http://www.w3.org/2002/07/owl#inverseOf> <https://go-fair-gov.github.io/ontology/e-process/fazParteDe> .
+<https://go-fair-gov.github.io/ontology/e-process/compostoPor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://go-fair-gov.github.io/ontology/e-process/Processo> .
+<https://go-fair-gov.github.io/ontology/e-process/compostoPor> <http://www.w3.org/2000/01/rdf-schema#range> <https://go-fair-gov.github.io/ontology/e-process/Documento> .
+# 
+# https://go-fair-gov.github.io/ontology/e-process/criadoPor
+<https://go-fair-gov.github.io/ontology/e-process/criadoPor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://go-fair-gov.github.io/ontology/e-process/criadoPor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://go-fair-gov.github.io/ontology/e-process/Documento> .
+<https://go-fair-gov.github.io/ontology/e-process/criadoPor> <http://www.w3.org/2000/01/rdf-schema#range> <https://go-fair-gov.github.io/ontology/e-process/Autor> .
+# 
+# https://go-fair-gov.github.io/ontology/e-process/fazParteDe
+<https://go-fair-gov.github.io/ontology/e-process/fazParteDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://go-fair-gov.github.io/ontology/e-process/fazParteDe> <http://www.w3.org/2000/01/rdf-schema#domain> <https://go-fair-gov.github.io/ontology/e-process/Documento> .
+<https://go-fair-gov.github.io/ontology/e-process/fazParteDe> <http://www.w3.org/2000/01/rdf-schema#range> <https://go-fair-gov.github.io/ontology/e-process/Processo> .
+# 
+# https://go-fair-gov.github.io/ontology/e-process/publicadoPor
+<https://go-fair-gov.github.io/ontology/e-process/publicadoPor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://go-fair-gov.github.io/ontology/e-process/publicadoPor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://go-fair-gov.github.io/ontology/e-process/Documento> .
+<https://go-fair-gov.github.io/ontology/e-process/publicadoPor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://go-fair-gov.github.io/ontology/e-process/Processo> .
+<https://go-fair-gov.github.io/ontology/e-process/publicadoPor> <http://www.w3.org/2000/01/rdf-schema#range> <https://go-fair-gov.github.io/ontology/e-process/Organizacao> .
+<https://go-fair-gov.github.io/ontology/e-process/publicadoPor> <http://www.w3.org/2000/01/rdf-schema#comment> "Relação que define a publicação de algum recurso qualquer" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://go-fair-gov.github.io/ontology/e-process/dataCriacao
+<https://go-fair-gov.github.io/ontology/e-process/dataCriacao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://go-fair-gov.github.io/ontology/e-process/dataCriacao> <http://www.w3.org/2000/01/rdf-schema#domain> <https://go-fair-gov.github.io/ontology/e-process/Documento> .
+<https://go-fair-gov.github.io/ontology/e-process/dataCriacao> <http://www.w3.org/2000/01/rdf-schema#domain> <https://go-fair-gov.github.io/ontology/e-process/Processo> .
+<https://go-fair-gov.github.io/ontology/e-process/dataCriacao> <http://www.w3.org/2000/01/rdf-schema#comment> "Data de criação do recurso" .
+# 
+# https://go-fair-gov.github.io/ontology/e-process/formato
+<https://go-fair-gov.github.io/ontology/e-process/formato> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://go-fair-gov.github.io/ontology/e-process/formato> <http://www.w3.org/2000/01/rdf-schema#domain> <https://go-fair-gov.github.io/ontology/e-process/Documento> .
+<https://go-fair-gov.github.io/ontology/e-process/formato> <http://www.w3.org/2000/01/rdf-schema#comment> "Formato, extensão ou estrutura de uma informação" .
+# 
+# https://go-fair-gov.github.io/ontology/e-process/nome
+<https://go-fair-gov.github.io/ontology/e-process/nome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://go-fair-gov.github.io/ontology/e-process/nome> <http://www.w3.org/2000/01/rdf-schema#domain> <https://go-fair-gov.github.io/ontology/e-process/Acesso> .
+<https://go-fair-gov.github.io/ontology/e-process/nome> <http://www.w3.org/2000/01/rdf-schema#domain> <https://go-fair-gov.github.io/ontology/e-process/Assunto> .
+<https://go-fair-gov.github.io/ontology/e-process/nome> <http://www.w3.org/2000/01/rdf-schema#domain> <https://go-fair-gov.github.io/ontology/e-process/Materia> .
+<https://go-fair-gov.github.io/ontology/e-process/nome> <http://www.w3.org/2000/01/rdf-schema#domain> <https://go-fair-gov.github.io/ontology/e-process/Organizacao> .
+<https://go-fair-gov.github.io/ontology/e-process/nome> <http://www.w3.org/2000/01/rdf-schema#domain> <https://go-fair-gov.github.io/ontology/e-process/Papel> .
+<https://go-fair-gov.github.io/ontology/e-process/nome> <http://www.w3.org/2000/01/rdf-schema#domain> <https://go-fair-gov.github.io/ontology/e-process/Pessoa> .
+<https://go-fair-gov.github.io/ontology/e-process/nome> <http://www.w3.org/2000/01/rdf-schema#comment> "Nome proprio de um recurso" .
+# 
+# https://go-fair-gov.github.io/ontology/e-process/numero
+<https://go-fair-gov.github.io/ontology/e-process/numero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://go-fair-gov.github.io/ontology/e-process/numero> <http://www.w3.org/2000/01/rdf-schema#domain> <https://go-fair-gov.github.io/ontology/e-process/Documento> .
+<https://go-fair-gov.github.io/ontology/e-process/numero> <http://www.w3.org/2000/01/rdf-schema#domain> <https://go-fair-gov.github.io/ontology/e-process/Processo> .
+<https://go-fair-gov.github.io/ontology/e-process/numero> <http://www.w3.org/2000/01/rdf-schema#comment> "Número" .
+# 
+# https://go-fair-gov.github.io/ontology/e-process/urlOrigem
+<https://go-fair-gov.github.io/ontology/e-process/urlOrigem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://go-fair-gov.github.io/ontology/e-process/urlOrigem> <http://www.w3.org/2000/01/rdf-schema#domain> <https://go-fair-gov.github.io/ontology/e-process/Documento> .
+<https://go-fair-gov.github.io/ontology/e-process/urlOrigem> <http://www.w3.org/2000/01/rdf-schema#domain> <https://go-fair-gov.github.io/ontology/e-process/Processo> .
+<https://go-fair-gov.github.io/ontology/e-process/urlOrigem> <http://www.w3.org/2000/01/rdf-schema#comment> "Endereço URL de origem de um recurso gerenciado por outro provedor" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://go-fair-gov.github.io/ontology/e-process/Acesso
+<https://go-fair-gov.github.io/ontology/e-process/Acesso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://go-fair-gov.github.io/ontology/e-process/Acesso> <http://www.w3.org/2000/01/rdf-schema#comment> "Nível de acesso ao processo ou documento eletrônico." .
+# 
+# https://go-fair-gov.github.io/ontology/e-process/Assunto
+<https://go-fair-gov.github.io/ontology/e-process/Assunto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://go-fair-gov.github.io/ontology/e-process/Assunto> <http://www.w3.org/2000/01/rdf-schema#comment> "Sumariza o conteúdo de um documento" .
+# 
+# https://go-fair-gov.github.io/ontology/e-process/Autor
+<https://go-fair-gov.github.io/ontology/e-process/Autor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://go-fair-gov.github.io/ontology/e-process/Autor> <http://www.w3.org/2000/01/rdf-schema#comment> "Responsável pela criação de um documento" .
+# 
+# https://go-fair-gov.github.io/ontology/e-process/Documento
+<https://go-fair-gov.github.io/ontology/e-process/Documento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://go-fair-gov.github.io/ontology/e-process/Documento> <http://www.w3.org/2000/01/rdf-schema#comment> "Um documento anexado à um processo eletrônico" .
+# 
+# https://go-fair-gov.github.io/ontology/e-process/Materia
+<https://go-fair-gov.github.io/ontology/e-process/Materia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://go-fair-gov.github.io/ontology/e-process/Materia> <http://www.w3.org/2000/01/rdf-schema#comment> "Classificação para um processo eletrônico" .
+# 
+# https://go-fair-gov.github.io/ontology/e-process/Organizacao
+<https://go-fair-gov.github.io/ontology/e-process/Organizacao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://go-fair-gov.github.io/ontology/e-process/Organizacao> <http://www.w3.org/2000/01/rdf-schema#comment> "Instituição que produz e disponibiliza processos eletrônicos" .
+# 
+# https://go-fair-gov.github.io/ontology/e-process/Papel
+<https://go-fair-gov.github.io/ontology/e-process/Papel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://go-fair-gov.github.io/ontology/e-process/Papel> <http://www.w3.org/2000/01/rdf-schema#comment> "Função exercida por uma pessoa em uma organização" .
+# 
+# https://go-fair-gov.github.io/ontology/e-process/Pessoa
+<https://go-fair-gov.github.io/ontology/e-process/Pessoa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://go-fair-gov.github.io/ontology/e-process/Pessoa> <http://www.w3.org/2000/01/rdf-schema#comment> "Um pessoa" .
+# 
+# https://go-fair-gov.github.io/ontology/e-process/Processo
+<https://go-fair-gov.github.io/ontology/e-process/Processo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://go-fair-gov.github.io/ontology/e-process/Processo> <http://www.w3.org/2000/01/rdf-schema#comment> "Processo eletrônico" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

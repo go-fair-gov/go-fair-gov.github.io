@@ -1,0 +1,303 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://go-fair-gov.github.io/ontology/e-process/"
+     xml:base="https://go-fair-gov.github.io/ontology/e-process/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://go-fair-gov.github.io/ontology/e-process/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://go-fair-gov.github.io/ontology/e-process/associadoA -->
+
+
+    <owl:ObjectProperty rdf:about="https://go-fair-gov.github.io/ontology/e-process/associadoA">
+        <rdfs:domain rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Pessoa"/>
+        <rdfs:range rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Organizacao"/>
+        <rdfs:comment>Relação de associação entre dois recursos quaisquer</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://go-fair-gov.github.io/ontology/e-process/atuaComo -->
+
+
+    <owl:ObjectProperty rdf:about="https://go-fair-gov.github.io/ontology/e-process/atuaComo">
+        <rdfs:domain rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Pessoa"/>
+        <rdfs:range rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Papel"/>
+        <rdfs:comment>Conceitua a função ou papel de uma pessoa em uma organização</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://go-fair-gov.github.io/ontology/e-process/autorDe -->
+
+
+    <owl:ObjectProperty rdf:about="https://go-fair-gov.github.io/ontology/e-process/autorDe">
+        <owl:inverseOf rdf:resource="https://go-fair-gov.github.io/ontology/e-process/criadoPor"/>
+        <rdfs:domain rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Autor"/>
+        <rdfs:range rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Documento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://go-fair-gov.github.io/ontology/e-process/cita -->
+
+
+    <owl:ObjectProperty rdf:about="https://go-fair-gov.github.io/ontology/e-process/cita">
+        <owl:inverseOf rdf:resource="https://go-fair-gov.github.io/ontology/e-process/citadoEm"/>
+        <rdfs:domain rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Documento"/>
+        <rdfs:range rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Pessoa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://go-fair-gov.github.io/ontology/e-process/citadoEm -->
+
+
+    <owl:ObjectProperty rdf:about="https://go-fair-gov.github.io/ontology/e-process/citadoEm">
+        <rdfs:domain rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Documento"/>
+        <rdfs:domain rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Pessoa"/>
+        <rdfs:range rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Documento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://go-fair-gov.github.io/ontology/e-process/classificadoComo -->
+
+
+    <owl:ObjectProperty rdf:about="https://go-fair-gov.github.io/ontology/e-process/classificadoComo">
+        <rdfs:domain rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Documento"/>
+        <rdfs:domain rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Processo"/>
+        <rdfs:range rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Acesso"/>
+        <rdfs:range rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Assunto"/>
+        <rdfs:range rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Materia"/>
+        <rdfs:comment>Classifica uma categoria à um recurso qualquer</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://go-fair-gov.github.io/ontology/e-process/compostoPor -->
+
+
+    <owl:ObjectProperty rdf:about="https://go-fair-gov.github.io/ontology/e-process/compostoPor">
+        <owl:inverseOf rdf:resource="https://go-fair-gov.github.io/ontology/e-process/fazParteDe"/>
+        <rdfs:domain rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Processo"/>
+        <rdfs:range rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Documento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://go-fair-gov.github.io/ontology/e-process/criadoPor -->
+
+
+    <owl:ObjectProperty rdf:about="https://go-fair-gov.github.io/ontology/e-process/criadoPor">
+        <rdfs:domain rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Documento"/>
+        <rdfs:range rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Autor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://go-fair-gov.github.io/ontology/e-process/fazParteDe -->
+
+
+    <owl:ObjectProperty rdf:about="https://go-fair-gov.github.io/ontology/e-process/fazParteDe">
+        <rdfs:domain rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Documento"/>
+        <rdfs:range rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Processo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://go-fair-gov.github.io/ontology/e-process/publicadoPor -->
+
+
+    <owl:ObjectProperty rdf:about="https://go-fair-gov.github.io/ontology/e-process/publicadoPor">
+        <rdfs:domain rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Documento"/>
+        <rdfs:domain rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Processo"/>
+        <rdfs:range rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Organizacao"/>
+        <rdfs:comment>Relação que define a publicação de algum recurso qualquer</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://go-fair-gov.github.io/ontology/e-process/dataCriacao -->
+
+
+    <owl:DatatypeProperty rdf:about="https://go-fair-gov.github.io/ontology/e-process/dataCriacao">
+        <rdfs:domain rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Documento"/>
+        <rdfs:domain rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Processo"/>
+        <rdfs:comment>Data de criação do recurso</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://go-fair-gov.github.io/ontology/e-process/formato -->
+
+
+    <owl:DatatypeProperty rdf:about="https://go-fair-gov.github.io/ontology/e-process/formato">
+        <rdfs:domain rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Documento"/>
+        <rdfs:comment>Formato, extensão ou estrutura de uma informação</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://go-fair-gov.github.io/ontology/e-process/nome -->
+
+
+    <owl:DatatypeProperty rdf:about="https://go-fair-gov.github.io/ontology/e-process/nome">
+        <rdfs:domain rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Acesso"/>
+        <rdfs:domain rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Assunto"/>
+        <rdfs:domain rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Materia"/>
+        <rdfs:domain rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Organizacao"/>
+        <rdfs:domain rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Papel"/>
+        <rdfs:domain rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Pessoa"/>
+        <rdfs:comment>Nome proprio de um recurso</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://go-fair-gov.github.io/ontology/e-process/numero -->
+
+
+    <owl:DatatypeProperty rdf:about="https://go-fair-gov.github.io/ontology/e-process/numero">
+        <rdfs:domain rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Documento"/>
+        <rdfs:domain rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Processo"/>
+        <rdfs:comment>Número</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://go-fair-gov.github.io/ontology/e-process/urlOrigem -->
+
+
+    <owl:DatatypeProperty rdf:about="https://go-fair-gov.github.io/ontology/e-process/urlOrigem">
+        <rdfs:domain rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Documento"/>
+        <rdfs:domain rdf:resource="https://go-fair-gov.github.io/ontology/e-process/Processo"/>
+        <rdfs:comment>Endereço URL de origem de um recurso gerenciado por outro provedor</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://go-fair-gov.github.io/ontology/e-process/Acesso -->
+
+
+    <owl:Class rdf:about="https://go-fair-gov.github.io/ontology/e-process/Acesso">
+        <rdfs:comment>Nível de acesso ao processo ou documento eletrônico.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://go-fair-gov.github.io/ontology/e-process/Assunto -->
+
+
+    <owl:Class rdf:about="https://go-fair-gov.github.io/ontology/e-process/Assunto">
+        <rdfs:comment>Sumariza o conteúdo de um documento</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://go-fair-gov.github.io/ontology/e-process/Autor -->
+
+
+    <owl:Class rdf:about="https://go-fair-gov.github.io/ontology/e-process/Autor">
+        <rdfs:comment>Responsável pela criação de um documento</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://go-fair-gov.github.io/ontology/e-process/Documento -->
+
+
+    <owl:Class rdf:about="https://go-fair-gov.github.io/ontology/e-process/Documento">
+        <rdfs:comment>Um documento anexado à um processo eletrônico</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://go-fair-gov.github.io/ontology/e-process/Materia -->
+
+
+    <owl:Class rdf:about="https://go-fair-gov.github.io/ontology/e-process/Materia">
+        <rdfs:comment>Classificação para um processo eletrônico</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://go-fair-gov.github.io/ontology/e-process/Organizacao -->
+
+
+    <owl:Class rdf:about="https://go-fair-gov.github.io/ontology/e-process/Organizacao">
+        <rdfs:comment>Instituição que produz e disponibiliza processos eletrônicos</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://go-fair-gov.github.io/ontology/e-process/Papel -->
+
+
+    <owl:Class rdf:about="https://go-fair-gov.github.io/ontology/e-process/Papel">
+        <rdfs:comment>Função exercida por uma pessoa em uma organização</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://go-fair-gov.github.io/ontology/e-process/Pessoa -->
+
+
+    <owl:Class rdf:about="https://go-fair-gov.github.io/ontology/e-process/Pessoa">
+        <rdfs:comment>Um pessoa</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://go-fair-gov.github.io/ontology/e-process/Processo -->
+
+
+    <owl:Class rdf:about="https://go-fair-gov.github.io/ontology/e-process/Processo">
+        <rdfs:comment>Processo eletrônico</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
