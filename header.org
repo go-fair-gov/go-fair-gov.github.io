@@ -1,0 +1,21 @@
+#+TITLE: Go Fair Gov
+#+INFOJS_OPT: path:css/plain_and_simple.js
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/plain_and_simple.css" />
+
+#+begin_src emacs-lisp :exports results :results html  
+	   "
+      <div>
+      <img src=\"images\\logo.png\" height=\"40\">
+	<ul id=\"nav\">
+	      <li><a href=\"tecnologias.html\">Tecnologias</a></li>
+	      <li><a href=\"baseDados.html\">Base de Dados</a></li>
+	      <li><a href=\"about.html\">Sobre</a></li>
+	    </ul>
+	</div>
+	    <br>
+   <br>
+   <br>
+  <hr>
+  "
+#+end_src
+

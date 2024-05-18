@@ -1,0 +1,3 @@
+#+INCLUDE: "header.org"
+
+Go Fair Gov é uma iniciativa que promove a implantação dos princípios FAIR na gestão de dados governamentais, a fim de torná-los localizáveis, acessíveis, interoperáveis e reutilizáveis.
